@@ -1,0 +1,43 @@
+class Pessoa:
+  def _init_(self, nome_completo, idade, sexo):
+    self.nome_completo = nome_completo
+    self.idade = idade
+    self.genero = genero
+    maria = Estudante('Maria dos Santos','20','feminino')
+    print(maria.nome_completo + "\n" + "\n" + maria.idade +"\n"+ maria.sexo)
+
+class Estudante:
+  def _init_(self, nome_completo, idade, sexo):
+    self.nome_completo = nome_completo
+    self.idade = idade
+    self.curso = curso
+    maria = Estudante('Maria dos Santos','20','Administração')
+    print(maria.nome_completo + "\n" + "\n" + maria.idade +"\n"+ maria.curso)
+
+class Professor:
+  def _init_(self, nome_completo, matricula, curso):
+    self.nome_completo = nome_completo
+    self.matricula = matricula
+    self.curso = curso
+    
+    professor = Estudante('Mariana Araujo','27','Administração')
+    print(professor.nome_completo + "\n" + "\n" + professor.matricula +"\n"+ professor.curso)
+
+class Servicos:
+  def _init_(self, curso, estagio, doacoes):
+    self.curso = curso
+    self.matricula = matricula
+    self.doacoes = doacoes
+    
+    servico = Servicos('Administração','333427','R$434,50')
+    print(servico.curso + "\n" + "\n" + servico.matricula +"\n"+ servico.doacoes)
+
+class Voluntarios:
+  def _init_(self, nome, cpf, cargo, setor):
+    self.nome = nome
+    self.cpf = cpf
+    self.cargo = cargo
+    self.setor = setor
+    
+    voluntarios = Voluntarios('Luis Moura','333427','Assistencia','administrativo')
+    print(voluntarios.nome + "\n" + "\n" + voluntarios.cpf +"\n"+ voluntarios.cargo+"\n"+ voluntarios.setor)  
