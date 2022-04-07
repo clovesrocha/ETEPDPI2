@@ -1,0 +1,119 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/clovesrocha/ETEPDPI2/blob/main/Python_objetos\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 8,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tjeLvQ0zArzx",
+        "outputId": "c54a8ad2-7192-4605-8822-673638347857"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "João\n",
+            "27\n",
+            "Masculino\n",
+            "\n",
+            "Maria\n",
+            "7456\n",
+            "Desenvolvimento de Sistemas\n",
+            "\n",
+            "Cloves\n",
+            "7456\n",
+            "Desenvolvimento de Sistemas\n",
+            "\n",
+            "Ana\n",
+            "08878001454\n",
+            "tecnologiaDesenvolvimento de Sistemas\n",
+            "\n",
+            "tecnologia\n",
+            "Tec. em Informática\n",
+            "Cesta básica\n",
+            "\n"
+          ]
+        }
+      ],
+      "source": [
+        "class Pessoas:\n",
+        "    def __init__(self, nome, idade, genero):\n",
+        "       self.nome = nome\n",
+        "       self.idade = idade\n",
+        "       self.genero = genero\n",
+        "\n",
+        "joao = Pessoas('João', '27', 'Masculino')\n",
+        "print (joao.nome + \"\\n\" + joao.idade + \"\\n\" + joao.genero + \"\\n\")\n",
+        "   \n",
+        "class Estudantes:\n",
+        "    def __init__(self, nome, matricula, curso):\n",
+        "       self.nome = nome\n",
+        "       self.matricula = matricula\n",
+        "       self.curso = curso\n",
+        "\n",
+        "maria = Estudantes('Maria', \"7456\", 'Desenvolvimento de Sistemas')\n",
+        "print (maria.nome + \"\\n\" + maria.matricula + \"\\n\" + maria.curso + \"\\n\")\n",
+        "\n",
+        "class Professores:\n",
+        "    def __init__(self, nome, matricula, curso):\n",
+        "       self.nome = nome\n",
+        "       self.matricula = matricula\n",
+        "       self.curso = curso\n",
+        "\n",
+        "cloves = Professores('Cloves', \"7456\", 'Desenvolvimento de Sistemas')\n",
+        "print (cloves.nome + \"\\n\" + cloves.matricula + \"\\n\" + cloves.curso + \"\\n\")\n",
+        "\n",
+        "\n",
+        "class Voluntarios:\n",
+        "    def __init__(self, nome, cpf, setor, cargo):\n",
+        "       self.nome = nome\n",
+        "       self.cpf = cpf\n",
+        "       self.setor = setor\n",
+        "       self.cargo = cargo\n",
+        "\n",
+        "ana = Voluntarios('Ana', '08878001454', 'tecnologia', 'Desenvolvimento de Sistemas')\n",
+        "print (ana.nome + \"\\n\" + ana.cpf + \"\\n\" + ana.setor + ana.cargo + \"\\n\")\n",
+        "\n",
+        "class Servicos:\n",
+        "    def __init__(self, cursos, estagios, doacoes):\n",
+        "       self.cursos = cursos\n",
+        "       self.estagios = estagios\n",
+        "       self.doacoes = doacoes\n",
+        "\n",
+        "informatica = Servicos('tecnologia', 'Tec. em Informática', 'Cesta básica')\n",
+        "print (informatica.cursos + \"\\n\" + informatica.estagios + \"\\n\" + informatica.doacoes + \"\\n\")\n"
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyNVpvqzEhu5ddl0a+0WewDo",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
